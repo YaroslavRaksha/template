@@ -28,6 +28,10 @@ $play: 'Playfair Display', serif;
   padding: 0px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 hr {
   background-color: #fff;
   color: #fff;
