@@ -445,21 +445,11 @@ hr {
   }
 }
 
-
-@media (max-width: 541px) {
-  .main {
-    &__collection {
-      .new__collection {
-        padding-top: 30px;
-      }
-    }
-  }
-}
-
 @media (max-width: 473px) {
   .main {
     &__collection {
       .new__collection {
+        padding-top: 30px;
         font-size: 18px;
         .new__catalog {
           font-size: 14px;
