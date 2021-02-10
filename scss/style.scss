@@ -1,0 +1,527 @@
+
+/* FONTS */
+$sans: 'PT Sans', sans-serif;
+$ops: 'Black Ops One', cursive;
+$play: 'Playfair Display', serif;
+@mixin season {
+  color: #fff;
+  padding-top: 90px;
+  text-transform: uppercase;
+  font-family: $play;
+  font-size: 36px;
+}
+
+@mixin watch__title {
+  padding-top: 20px;
+  font-family: $play;
+  color: #fff;
+  font-size: 18px;
+}
+@mixin watch__price {
+  padding-top: 10px;
+  font-family: $play;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+hr {
+  background-color: #fff;
+  color: #fff;
+  margin-top: 35px;
+  width: 50%;
+}
+
+.header {
+  &__top {
+    padding: 14px 405px;
+    background-color: black;
+    font-size: 14px;
+    color: gray;
+    .phone__img {
+      padding-right: 15px;
+    }
+    a {
+      color: gray;
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+  &__bottom {
+    padding: 0px 405px;
+    background-color: #0F0F0F;
+  }
+  &__logo {
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $ops;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: default;
+  }
+  &__nav {
+    font-family: $sans;
+    a {
+      color: gray;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .nav__item {
+      padding: 31px 30px;
+      text-transform: uppercase;
+      transition: background-color 0.2s linear;
+      &:hover {
+        background-color: #1F1F1F;
+        color: #fff;
+      }
+    }
+    .search__img {
+      padding-left: 40px;
+    }
+    .cart__img {
+      padding-left: 30px;
+    }
+  }
+}
+
+.main {
+  background-color: black;
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    padding: 98px 67px;
+    .text__logo {
+      font-size: 52px;
+      font-family: $ops;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 1px solid #fff;
+    }
+    .text__city {
+      color: #fff;
+      font-size: 22px;
+      font-family: $sans;
+      text-transform: uppercase;
+      padding-top: 7px;
+    }
+  }
+  &__collection {
+    .season__2021 {
+      @include season;
+    }
+    .collection {
+      &__card {
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+      &__watch {
+        padding: 20px 25px;
+      }
+    }
+    .new__collection {
+      hr {
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include season;
+      .new__catalog {
+        font-family: $sans;
+        font-size: 18px;
+        letter-spacing: 3px;
+        border: 1px solid #fff;
+        width: 60%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 20px auto 0;
+        transition: background-color 0.2s linear;
+        cursor: pointer;
+        &:hover {
+          color: #000;
+          background-color: #fff;
+        }
+      }
+    }
+    .watch {
+      &__title {
+        @include watch__title;
+      }
+      &__price {
+        @include watch__price;
+      }
+    }
+    .season__2018 {
+      @include season;
+    }
+    .lorem__ipsum {
+      font-size: 14px;
+      color: #fff;
+      font-family: $sans;
+      padding-top: 30px;
+      padding-bottom: 60px;
+
+    }
+    .button__2018 {
+      font-family: $sans;
+      font-size: 18px;
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      padding: 15px 30px;
+      cursor: pointer;
+      color: #fff;
+      letter-spacing: 2.5px;
+      transition: background-color 0.2s linear;
+      &:hover {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+  }
+  .arrivals {
+    .new__arrivals {
+      @include season;
+    }
+    .watch__arrivals {
+      padding-top: 65px;
+      padding-bottom: 120px;
+    }
+    .watch__title {
+      @include watch__title;
+    }
+    .watch__price {
+      @include watch__price;
+    }
+    .watch__card {
+      padding-bottom: 20px;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}
+
+.footer {
+  background-color: #0F0F0F;
+  .our__brands {
+    @include season;
+    padding-top: 50px;
+    font-weight: 600;
+  }
+  .img__brands {
+    padding-bottom: 60px;
+  }
+  &__components {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    color: #fff;
+    background: url("../img/footer__img.png");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center;
+    .footer__component {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .component__header {
+      font-size: 32px;
+      font-family: $play;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .component__text {
+      padding-top: 40px;
+      font-family: $sans;
+      font-size: 14px;
+      color: #fff;
+    }
+    .category__footer {
+      padding: 10px 20px;
+      margin-bottom: 30px;
+      background-color: #0F0F0F;
+    }
+  }
+  .myForm {
+    padding-top: 30px;
+  }
+  #inputForm {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+    border: 0px;
+    padding: 10px 10px;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      background-color: #fff;
+    }
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: gray;
+      opacity: 1; /* Firefox */
+    }
+    &::-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: gray;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: gray;
+    }
+  }
+  .subscribe {
+    text-transform: uppercase;
+    background-color: #0F0F0F;
+    padding: 10px 20px;
+    font-family: $sans;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+  }
+  .template_by {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+    font-family: $play;
+  }
+}
+
+@media (max-width: 1650px) {
+  .header {
+    &__top {
+      padding: 14px 150px;
+    }
+    &__bottom {
+      padding: 14px 150px;
+    }
+  }
+  .main {
+    &__collection {
+      .season__2021 {
+        color: #fff;
+        padding-top: 50px;
+        text-transform: uppercase;
+        font-family: $play;
+        font-size: 36px;
+      }
+      .season__2018 {
+        padding-top: 50px;
+      }
+      .lorem__ipsum {
+        padding-top: 15px;
+        padding-bottom: 25px;
+      }
+    }
+    .collection {
+      &__card {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      &__watch {
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .main {
+    .collection__card {
+      padding-bottom: 50px;
+    }
+    &__collection {
+      .button__2018 {
+        margin-bottom: 40px;
+      }
+      .lorem__ipsum {
+        font-size: 18px;
+      }
+      .season__2018 {
+        font-size: 42px;
+      }
+    }
+  }
+  .arrivals {
+    .watch__arrivals {
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .header {
+    &__top {
+      padding: 14px 40px;
+    }
+    &__bottom {
+      padding: 14px 40px;
+    }
+  }
+  .main {
+    &__text {
+      padding: 77px 50px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    &__components {
+      padding-top: 0px;
+    }
+    &__component {
+      padding-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 927px) {
+  .navigation {
+    display: none;
+  }
+  .main {
+    &__text {
+      padding: 50px 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__top {
+      padding: 10px 25px;
+    }
+    &__bottom {
+      padding: 10px 25px;
+    }
+  }
+  .phone__number {
+    display: none;
+  }
+  .header {
+    a {
+      font-size: 16px;
+    }
+  }
+  .main {
+    &__text {
+      padding: 40px 20px;
+      .text__logo {
+        font-size: 42px;
+      }
+      .text__city {
+        font-size: 18px;
+      }
+    }
+    .arrivals {
+      .watch__arrivals {
+        padding: 30px 5px 70px;
+      }
+      .watch__title {
+        padding-top: 5px;
+        font-size: 16px;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 711px) {
+  .main {
+    &__collection {
+      .new__collection {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 473px) {
+  .main {
+    &__collection {
+      .new__collection {
+        font-size: 18px;
+        .new__catalog {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    &__collection {
+      .lorem__ipsum {
+        font-size: 14px;
+      }
+      .season__2018 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 569px) {
+  hr {
+    margin-top: 25px;
+  }
+  .main {
+    &__text {
+      padding: 20px 10px;
+      .text__logo {
+        font-size: 32px;
+      }
+      .text__city {
+        font-size: 16px;
+      }
+    }
+    .watch__title {
+      font-size: 16px;
+    }
+    .watch__price {
+      font-size: 14px;
+    }
+    .season__2021 {
+      padding-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 493px) {
+  .main {
+    .collection__watch {
+      padding: 5px 10px;
+    }
+    .collection__card {
+      padding-right: 5px;
+      padding-left: 5px;
+      padding-bottom: 20px;
+    }
+    &__collection {
+      .lorem__ipsum {
+        font-size: 11px;
+      }
+    }
+    .arrivals {
+      .new__arrivals {
+        padding-top: 50px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+
+
+
+
