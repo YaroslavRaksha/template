@@ -412,6 +412,7 @@ hr {
 }
 @media (max-width: 473px) {
   .main__collection .new__collection {
+    padding-top: 30px;
     font-size: 18px;
   }
   .main__collection .new__collection .new__catalog {
